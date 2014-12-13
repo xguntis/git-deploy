@@ -6,11 +6,11 @@ This deployment script is a combination of two scripts that I found on github an
 * [Deploy your site with git](https://gist.github.com/oodavid/1809044) by [David King](https://gist.github.com/oodavid)
 * [Simple PHP Git deploy script](https://github.com/markomarkovic/simple-php-git-deploy) by [Marko Marković](https://github.com/markomarkovic)
 
-What this script does is - it:
+What this script does is:
 
-* add all server changes and stash them for easy retrieval later in case, if there is problem after deploing or some changes on server are done directly - just to avoid loosing them.
-* do git pull from the remote repository
-* log all output to screen and to file
+* add all server changes to git repository and stash them for easy retrieval later if needed;
+* do git pull from the remote repository;
+* log all output to screen and to file.
 
 ## Prerequisites, assumptions
 
@@ -33,7 +33,7 @@ After pushing your local changes to remote repository (Github, Bitbucket, or sim
 www.myserver.com/deploy/deploy.php
 ```
 
-You will see the output on the screent.
+You will see the output on the screen.
 
 When you are confident about your process you can go one more step further, by launching this script automatically after each commit. In order to do so you must set up web-hook in the remote repository (Github, Bitbucket, ...) and point to this script.
 
